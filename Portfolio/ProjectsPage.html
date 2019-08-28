@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grant Foster's Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center sticky-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand rounded-circle" href="PortfolioPage.html">
+        <img src="images/frame.jpg" alt="logo" style="width:60px;">
+        </a>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="PortfolioPage.html">Grant Foster</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="ProjectsPage.html">Projects</a>
+        </li>
+        <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="Projects" id="navbardrop" data-toggle="dropdown">
+            Projects
+        </a>
+        <div class="dropdown-menu">
+                <a class="dropdown-item" href="ProjectsPage.html">Pratice with Prototypes</a>
+                <a class="dropdown-item" href="ProjectsPage.html">Human Centered Design</a>
+                <a class="dropdown-item" href="ProjectsPage.html">Usability Architecture</a>
+        </div>
+        -->
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="About.html">About</a>
+        </li>
+     <!--<li class="nav-item">
+        <a class="nav-link" href="Contact.html">Contact</a>
+        </li>-->
+        <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+        </li>-->
+    </ul>
+</nav>
+
+<style>
+    
+    .accordion {
+        background-color: rgba(64, 118, 219, 0.45);
+        color: #444;
+        cursor: row-resize;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    
+    .active1, .accordion:hover {
+        background-color: rgba(0, 205, 212, 0.45);
+        cursor: row-resize;
+    }
+    
+    .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active1:after {
+        content: "\2212";
+    }
+    
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
+<!--<div class="container">
+    <div class="col-sm-4">
+        <h3>Projects Page</h3>        
+        <p>Will list projects and related skills here.</p>
+        </div>
+    </div>
+</div>
+-->
+<div class ="container col-sm-12">
+<h4>MY PROJECT EXPERIENCES:</h4>
+<button class="accordion">Human Centered Design</button>
+<div class="panel">
+  <p>Worked on a 10-week course project focused on the Human Centered Design Process. Emphasis was placed on guiding the iterative design process via constant user research, interviews and feedback from key stakeholders. Worked alongside university sustainability organization to create, test and evaluate a pilot program for potential future use.</p>
+  <p>Skills: Data Gathering, User Reasearch, Collaborative Iterative Design </p>
+  <a href="https://docs.google.com/document/d/1mioI9lkNLo_zr3KkOf0-66l4E9j61rU0nYDvF3XiFaw/edit?usp=sharing" target="_blank"><u>Design Portfolio</u></a>
+</div>
+
+<button class="accordion">Usability Architecture</button>
+<div class="panel">
+  <p>Worked with a team over five weeks to create a high-fidelity prototype for a health app. Design process focused on ideation, storyboarding and prototyping to create a final product presented to a mock group of investors.</p>
+  <p>Skills: Narrative Group Technique, Collaborative Iterative Design, html and CSS Basics</p>
+</div>
+
+<button class="accordion">Practice with Prototypes</button>
+<div class="panel">
+  <p>Worked with a team in a 10-week project focused course that introduced the iterative design process as a means of producing prototypes. Emphasized brainstorming, ideation and working with a group to create a theoretical prototype. The prototype had to be related to cyborgs and/or human augmentation with technology currently available. </p>
+  <p>Skills: Collaborative Ideation, Technology Research, Discussion and Presentation of Design Process</p>
+    <a href="files/COGS 100 Presentation.pdf" target="_blank"><u>Presentation of Theoretical Prototype</u></a>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<br style="line-height:1;"><br>
+<img src="images/logo.jpg" alt="GF Logo" class="center">
+<br style="line-height:1;"><br>
+
+</body>
+</html>
